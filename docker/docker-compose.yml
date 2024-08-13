@@ -1,0 +1,13 @@
+services:
+  todolist-postgresql:
+    image: postgres:16.3
+    environment:
+      POSTGRES_DB: bench_project
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5433:5432"
+    volumes:
+      - bench_project_pg_data:/var/lib/postgresql/data
+volumes:
+  bench_project_pg_data:
