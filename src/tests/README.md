@@ -1,7 +1,7 @@
 
 # Integration Tests
 
-This directory contains integration tests for the application. These tests ensure that all layers of the application work together as expected, including interactions with external services like PostgreSQL.
+This directory contains integration tests for the application. These tests ensure that all layers of the application work together as expected, including interactions with external services like PostgresSQL.
 
 ## Structure
 
@@ -22,4 +22,4 @@ This command will execute all tests in this directory, spinning up and tearing d
 
 ## Testcontainers
 
-The integration tests make use of Testcontainers to spin up real instances of external services like PostgreSQL. This ensures that the tests are as close to real-world scenarios as possible. The setup for these containers is handled in the `support/` module, allowing it to be reused across multiple tests.
+The integration tests make use of Testcontainers to spin up real instances of external services like PostgresSQL. This ensures that the tests are as close to real-world scenarios as possible. The setup for these containers is handled in the `support/` module, allowing it to be reused across multiple tests.
